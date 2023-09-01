@@ -1,0 +1,19 @@
+Blog Post 
+Intro
+We will build a blog app which lets users write blog entries once they sign up with an account (
+After the user registers, she can go to the homepage and login with her credentials. The navigation bar
+will dynamically show different items depending on the user being logged in or out. We will achieve this
+using the EJS templating engine
+
+That is, we divide our application into three interconnected parts, Model, View and Controller:
+- Model represents the structure of the data, the format and the constraints with which it is stored. In
+essence, it is the database part of the application. As you might already notice, we already have that in
+our models folder currently storing the BlogPost model.
+- View is what is presented to the user. Views make use of the Model and present data in a manner
+which the user wants. From the view, user can make changes to the data presented to them. In our app,
+the View consist of static or dynamic pages rendered to users. The pages are stored in a views folder
+storing various EJS files to render static and dynamic HTML websites.
+- Lastly, we have Controller which controls the requests of the user and then generates appropriate
+response rendered back to the user. That is, a user interacts with the View which generates the
+appropriate request which is handled by the Controller which then renders the appropriate view with
+the Model data as a response.
